@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel ="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Malena Bag</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="showcase" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+        <h1>Welcome to Malena Bag</h1>
+        <!--<a href="section-b" class="btn">Read More</a>-->
+     </div>
+    </header>
+
+    <!-- Main Area -->
+    <main id="main">
+    <!-- Section A -->
+     <section id="section-a" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Your New Obsession</h2>
+                <div class="content-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem non magnam, beatae molestiae quia neque, 
+                    debitis eveniet velit sit quos vero, minus eaque unde sunt libero vel soluta. Repellendus maxime corrupti sunt officia, 
+                    recusandae alias sequi minus sed! Nisi necessitatibus repellendus officia sunt placeat et odit odio quae omnis!
+                </p>
+                </div>
+            </div>
+        </section>
+
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+        <ul>
+            <li>
+                <div class="card">
+                    <img src="img/img2.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Malena Bag Life</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus asperiores 
+                            recusandae a necessitatibus blanditiis eius nihil in tenetur! 
+                            Blanditiis, quidem itaque quisquam quas fuga rerum omnis quasi corporis id.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="img/img5.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Malena Bag Love</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus asperiores 
+                            recusandae a necessitatibus blanditiis eius nihil in tenetur! 
+                            Blanditiis, quidem itaque quisquam quas fuga rerum omnis quasi corporis id.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="img/img6.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Malena Bag Dream</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus asperiores 
+                            recusandae a necessitatibus blanditiis eius nihil in tenetur! 
+                            Blanditiis, quidem itaque quisquam quas fuga rerum omnis quasi corporis id.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section C -->
+    <section id="section-c" class="grid">
+        <div class="content-wrap">
+            <h2 class="content-title">Always There With You...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores facere sint distinctio? 
+                Veniam sunt incidunt explicabo ipsam quos ullam vel ea sed eum. <br>
+                <br>Commodi, et optio quo suscipit laborum, soluta porro 
+                autem repellendus labore aliquid quae iusto illum, aut excepturi numquam facere doloribus. Similique, atque assumenda. 
+                Minus, maiores exercitationem.
+            </p>
+        </div>
+     </section>
+   
+
+   <!-- Section D -->
+   <section id="section-d" class="grid">
+       <div class="box">
+           <h2 class="content-title">About Us<i class="fas fa-shopping-bag"></i></h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptates quos voluptatum incidunt consequuntur minima nostrum laudantium commodi nobis aliquam est assumenda, 
+               tempora, totam corrupti velit. Sit accusantium alias eum.
+            </p>
+       </div>
+       <div class="box">
+           <h2 class="content-title">Contact Us<i class="fas fa-address-card"></i></h2>
+           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Harum placeat similique voluptatum voluptatibus ut eligendi officiis temporibus nesciunt accusantium blanditiis! In, ab totam! Corrupti voluptate obcaecati veniam vitae quis ducimus.
+           </p>
+       </div>
+   </section>
+    
+   <!-- Container Star Rating System-->
+        <div class="container mt-5">Which One Is Your Favorite?<i class="fas fa-user-edit"></i>
+            <select name="" id="product-select" class="form-control custom-select">
+                <option value="0" disabled selected>~Select Malena Bag~</option>
+                <option value="life">Malena Bag Life</option>
+                <option value="love">Malena Bag Love</option>
+                <option value="dream">Malena Bag Dream</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="~Rate 1 - 5~" disabled>
+        </div>
+        <table class="table table-striped">
+            <tbody>
+                <tr class="life">
+                    <td>Malena Bag Life<i class="fas fa-shopping-bag"></i></td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>         
+                    </td>
+                </tr>
+                    <tr class="love">
+                    <td>Malena Bag Love<i class="fas fa-shopping-bag"></i></td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>         
+                    </td>
+                </tr>
+                    <tr class="dream">
+                    <td>Malena Bag Dream<i class="fas fa-shopping-bag"></i></td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>         
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+</main>
+
+<!-- Footer-->
+<footer id="main-footer" class="grid">
+    <div>&#9400; Copyright 2019</div>
+</footer>
+
+<script src="goga.js"></script>
+</body>
+</html>

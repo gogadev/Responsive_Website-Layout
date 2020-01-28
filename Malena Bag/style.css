@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
+
+body {
+  font-family: "Merienda", cursive;
+  margin: 0;
+  background: beige;
+  color: lightcoral;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Kaushan Script", cursive;
+  color: lightcoral;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 15px 0;
+}
+
+p {
+  color: black;
+  opacity: 0.5;
+  margin: 0;
+  padding: 15px 0;
+}
+/*
+.btn {
+    display: inline-block;
+    width: 100%;
+    background: lightcoral;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background: white;
+    color: grey;
+} */
+
+/* Header */
+
+#showcase {
+  min-height: 600px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#showcase:hover {
+  background: url(img/img7.jpg) center/cover no-repeat;
+  /*color: lightseagreen;*/
+  transition: all 2s ease-in;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: lightpink url("img/img1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#showcase h1 {
+  font-family: "Kaushan Script", cursive;
+  letter-spacing: 5px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+#showcase h1:hover {
+  color: lightseagreen;
+  transition: all 1s ease-in;
+  opacity: 0.4;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 30px;
+}
+
+/* Section A */
+
+#section-a {
+  background: linear-gradient(lightgrey, white);
+  color: lightcoral;
+  padding-bottom: 30px;
+  box-shadow: -10px -10px 8px #888888;
+}
+
+/* Section B */
+
+#section-b {
+  background: linear-gradient(whitesmoke, lightgrey);
+  padding: 30px 15px 15px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  background: linear-gradient(lightsalmon, white);
+  color: grey;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.card {
+  opacity: 0.7;
+}
+
+.card:hover {
+  opacity: 1;
+  transition: all 1s ease-in;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  color: lightcoral;
+}
+
+/* Section C */
+
+#section-c {
+  background: linear-gradient(lightgrey, whitesmoke);
+  box-shadow: -10px -10px 8px #888888;
+  padding: 30px;
+}
+
+/* Section D */
+
+#section-d .box {
+  padding: 30px;
+  color: grey;
+}
+
+#section-d .box {
+  background: linear-gradient(lightgrey, white);
+  box-shadow: -12px -12px 8px #888888;
+  grid-column: span 2;
+}
+
+/* Footer */
+
+#main-footer {
+  background: linear-gradient(lightgrey, white);
+  box-shadow: -10px -10px 8px #888888;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  color: black;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.fa-shopping-bag,
+.fa-address-card,
+.fa-user-edit {
+  margin-left: 5px;
+}
+
+/* Star Rating */
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005\f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: lightgrey;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005\f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: lightcoral;
+}
+
+.life td,
+.love td,
+.dream td {
+  font-size: 15px;
+}
+
+.container,
+.form-control[option] {
+  font-size: 17px;
+}
+
+/* Media Query */
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 500px)) 1fr;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 30px;
+  }
+
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2/4;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+}
