@@ -2,7 +2,7 @@
 
 Responsive Website Layout (Mobile First Approach);
 
-Preview Of The Website: https://malena-bag.netlify.com/
+Preview Of The Project: https://malena-bag.netlify.com/
 
 ## Using
 
